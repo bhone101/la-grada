@@ -1,0 +1,18 @@
+# Local work and generated exports
+work/
+outputs/
+
+# Machine-specific files
+.DS_Store
+node_modules/
+*.log
+
+# Local credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Provider-specific deployment metadata
+deployment/

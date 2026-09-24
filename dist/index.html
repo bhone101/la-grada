@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>La Grada — A little deeper into football</title>
+    <meta
+      name="description"
+      content="Guess the player. Revisit the greats. Discover the stories of Spanish football. A free, independent La Liga clubhouse."
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23e8fd75'/%3E%3Cpath d='M9 7h5v17h10v4H9z' fill='%23141716'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="style.css?v=20260924-4" />
+    <script defer src="data.js"></script>
+    <script defer src="supabase-config.js"></script>
+    <script defer src="content-backend.js"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="topbar">
+      <a class="brand" href="#home"
+        ><span class="brand-symbol">L<span>G</span></span> LA GRADA<span
+          class="brand-note"
+          >THE FOOTBALL CLUBHOUSE</span
+        ></a
+      >
+      <nav aria-label="Main navigation">
+        <a href="#home">Clubhouse</a><a href="#play">Daily game</a
+        ><a href="#players">Players</a><a href="#discover">Discover</a>
+      </nav>
+      <a class="saved-link" href="#saved">♡ <span>Saved</span></a>
+    </header>
+    <main id="main" tabindex="-1" aria-busy="true">
+      <p class="eyebrow">LA GRADA</p>
+      <h1>Your football clubhouse.</h1>
+      <p role="status">Loading the player collection and stories…</p>
+      <noscript
+        ><p>
+          Enable JavaScript to explore the collection and play the guessing
+          game.
+        </p></noscript
+      >
+    </main>
+    <footer>
+      <a class="brand" href="#home">LA GRADA</a>
+      <p>An independent celebration of Spanish football.</p>
+      <button class="text-button" id="about-button">Sources &amp; about</button>
+    </footer>
+    <dialog id="detail">
+      <button class="close-dialog" aria-label="Close dialog">×</button>
+      <div id="dialog-content"></div>
+    </dialog>
+    <div id="toast" role="status"></div>
+  </body>
+</html>
